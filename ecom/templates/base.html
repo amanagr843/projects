@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Why you looking here</title>
+  </head>
+  <body>
+    {% include "nav.html" %}
+    {% csrf_token %}
+    <h1>This is Me!!</h1>
+    {% block content %}
+    replace me
+    {% endblock %}
+
+</html>

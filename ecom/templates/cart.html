@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Cart!</h1>
+<p>
+  This is Template
+  {{ my_name }}, {{ my_class }}
+  <ul>
+    {% for i in  my_friends %}
+    <li>{{ i }}</li>
+    {% endfor %}
+  </ul>
+</p>
+{% endblock %}

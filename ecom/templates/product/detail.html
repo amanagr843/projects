@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for item in list %}
+<div class="">
+  {{item.name}}<br>
+  {{item.description}}<br>
+  {{item.price}}<br>
+  <button type="button" name="button">Add to cart</button>
+</div>
+<br>
+{% endfor %}
+
+{% endblock %}
